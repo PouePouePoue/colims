@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  #wrapper {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  #header {
+    background: #2277aa;
+    height: 500px;
+  }
+
+  #content {
+    margin-top: 100px;
+    width: 200px;
+    float: left;
+    margin-left: 950px;
+    padding: 10px;
+    background: #c02b2b;
+  }
+  #left {
+    margin-top: 100px;
+    float: left;
+    width: 250px;
+    margin-left: -500px;
+    padding: 10px;
+    background: #ddd;
+  }
+  #right {
+    margin-top: 100px;
+    margin-right: 500px;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    background: #ccc;
+  }
+  #bg-left-right {
+    background: url(bg-left.png) left top repeat-y, url(bg-right.png) right top repeat-y;
+    overflow: hidden;
+  }
+  #footer {
+    clear: both;
+    height: 50px;
+    background: #2277aa;
+  }
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  body {
+    line-height: 1;
+  }
+  
+  .wrap {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  
+  
+  /* MAIN STYLES */
+  .b-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  
+    box-sizing: border-box;
+    border: 1px solid;
+  }
+  
+    .b-carousel__prev,
+    .b-carousel__next {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      transform: translateY(-50%) translateZ(0);
+      cursor: pointer;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      z-index: 3;
+    }
+  
+      .b-carousel__next {
+        left: auto;
+        right: 20px;
+      }
+  
+    .b-carousel__wrap {
+      display: flex;
+      transition: transform .5s;
+      will-change: transform;
+      position: relative;
+      z-index: 1;
+      height: 100%;
+    }
+  
+      .b-carousel__item {
+        flex: 0 0 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+        .b-carousel__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
